@@ -135,8 +135,6 @@ if __name__ == '__main__':
 
     
             cnt = cnt + 1
-            if(cnt < 144):
-                continue
             t = Thread(target=matting, args=(b1,b2,c1,c2,new_bg,cnt))
             t.start()
             if(ff == 0):
